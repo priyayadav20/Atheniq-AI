@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/*
+env/
+# Dependencies
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Django
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+secrets.json
+
+# Environment files
+.env
+*.env
+
+# Logs, coverage, test artifacts
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node / frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+celerybeat-schedule
+*.pid
+*.sock
+```
