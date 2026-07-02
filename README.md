@@ -1,65 +1,58 @@
-# StudyBud
+# Atheniq AI
 
-StudyBud is a Django-based web application where users can create and join study rooms on various topics, engage in discussions, and collaborate with other learners. 
+> An AI-Powered Collaborative Learning Platform
 
-This project was built as part of a comprehensive 7-hour video tutorial: [Watch the full tutorial here](https://youtu.be/PtQiiknWUcI?si=DK6uyA5ZnU1oR8v4)
+## About
 
-## Screenshots
+Atheniq AI is a modern collaborative learning platform built using Django. It enables students to learn together through study rooms, discussions, and AI-powered learning tools.
 
-<table width="100%"> 
-<tr>
-<td width="50%">      
-&nbsp; 
-<br>
-<p align="center">
-  Feed Home
-</p>
-<img src="https://user-images.githubusercontent.com/72341453/134747262-0a92233d-8010-40f8-84c5-8d94895aac44.PNG">
-</td> 
-<td width="50%">
-<br>
-<p align="center">
-  Room Conversation Preview
-</p>
-<img src="https://user-images.githubusercontent.com/72341453/134747155-3ca5b55f-b064-4741-aeae-abe90bddf41e.PNG">  
-</td>
-</table>
+This project is being continuously enhanced with Artificial Intelligence, Machine Learning, analytics, and productivity features to provide a smarter learning experience.
 
-## Setup Instructions
+---
 
-### 1. Clone the repository
+## Current Features
 
-```bash
-git clone https://github.com/divanov11/StudyBud.git
-cd StudyBud
-```
+- User Authentication
+- Study Rooms
+- Real-time Discussions
+- User Profiles
+- Topic-based Collaboration
 
-### 2. Create and activate a virtual environment
+---
 
-```bash
-# Install virtualenv if you haven't already
-pip install virtualenv
+## Upcoming Features
 
-# Create a virtual environment
-virtualenv venv
+- AI Study Assistant
+- AI Quiz Generator
+- PDF Notes Summarizer
+- ML-based Room Recommendation
+- Student Analytics Dashboard
+- Study Planner
+- Achievement & Badge System
+- Dark Mode
+- Cloud Deployment
 
-# Activate the virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-```
+---
 
-### 3. Install dependencies
+## Tech Stack
 
-```bash
-pip install -r requirements.txt
-```
+- Python
+- Django
+- HTML
+- CSS
+- JavaScript
+- SQLite
 
-### 4. Run the development server
+Future:
 
-```bash
-python manage.py runserver
-```
+- Google Gemini API
+- Scikit-learn
+- PostgreSQL
+- Docker
+- Render
 
-The application will be available at http://127.0.0.1:8000/
+---
+
+## Project Status
+
+🚀 Under Active Development
