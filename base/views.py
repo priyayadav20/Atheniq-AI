@@ -6,6 +6,7 @@ from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 from .models import Room, Topic, Message, User
 from .forms import RoomForm, UserForm, MyUserCreationForm
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -15,7 +16,7 @@ from .forms import RoomForm, UserForm, MyUserCreationForm
 #     {'id': 3, 'name': 'Frontend developers'},
 # ]
 
-
+@csrf_exempt
 def loginPage(request):
     page = 'login'
     if request.user.is_authenticated:
@@ -46,7 +47,7 @@ def logoutUser(request):
     logout(request)
     return redirect('home')
 
-
+@csrf_exempt
 def registerPage(request):
     form = MyUserCreationForm()
 
@@ -56,8 +57,8 @@ def registerPage(request):
             user = form.save(commit=False)
             user.username = user.username.lower()
             user.save()
-            login(request, user)
-            return redirect('home')
+            messages.success(request, 'Account created! Please log in.')
+            return redirect('login')  # redirect to login page after register
         else:
             messages.error(request, 'An error occurred during registration')
 
